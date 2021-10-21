@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+ 
+  h1{
+
+    font-size: 60px
+
+  }
+  h3{
+      margin-top: 10px;
+  }
+
+  ul{
+      list-style-type: none;
+  }
+  ul, li{
+      font-size: 23px;
+      padding: 10px;
+  }
+
+
+   .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:10px;
+  }
+  
+  
+  .button5 {background-color: #000000;} /* Black */
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 750px) {
+    /* For tablets: */
+
+    .col-s-9 {width: 75%;}
+
+  }
+  @media only screen and (min-width: 990px) {
+    /* For desktop: */
+
+    .col-6 {width: 50%;}
+
+  }

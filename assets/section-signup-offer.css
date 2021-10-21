@@ -1,0 +1,142 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+h1{
+     font-size: 60px;
+     margin: 50px;
+  }
+ p{
+	 font-size: 21px;
+ } 
+
+ 
+
+
+.upk-featured-list .upk-featured-image-wrap .upk-featured-img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.upk-featured-list .upk-featured-list-content {
+	position: relative;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.upk-featured-list .upk-featured-list-title {
+	margin: 0;
+	font-size: 25px;
+	font-weight: 700;
+
+	
+}
+.upk-featured-list  .upk-featured-meta {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #000000;
+	font-size: 17px;
+	line-height: 1;
+	padding-top: 10px;
+	font-weight: 500;
+
+}
+
+h1{
+ font-size: 50px;
+}
+@media only screen and (min-width: 750px) {
+ /* For tablets: */
+
+ .col-s-9 {width: 75%;}
+
+}
+@media only screen and (min-width: 990px) {
+ /* For desktop: */
+
+ .col-6 {width: 100%;}
+
+}
+
+#phenom{
+	margin-top: 7rem;
+	font-weight: 900;
+}
+
+.btn {
+   box-sizing: border-box;
+   appearance: none;
+   background-color: transparent;
+   cursor: pointer;
+   display: flex;
+   align-self: center;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1;
+   margin: 20px;
+   padding: 1.2em 4em;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 700;
+}
+
+.fifth {
+   border-color: #000000;
+   border-radius: 0;
+   color: #000000;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+
+}
+
+
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+ .upk-featured-list .upk-featured-image-wrap .upk-featured-img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.upk-featured-list .upk-featured-list-content {
+	position: relative;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.upk-featured-list .upk-featured-list-title {
+	margin: 0;
+	font-size: 25px;
+	font-weight: 700;
+
+	
+}
+.upk-featured-list  .upk-featured-meta {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #000000;
+	font-size: 17px;
+	line-height: 1;
+	padding-top: 10px;
+	font-weight: 500;
+
+}
+
+h1{
+ font-size: 50px;
+}
+
