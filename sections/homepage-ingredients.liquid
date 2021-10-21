@@ -1,4 +1,4 @@
-{{ "section-homepage-ingredients.css" | asset_url | stylesheet_tag}}
+{{ "section-homepage-ingredients.css" | asset_url | stylesheet_tag }}
   
 <div class="row">
   <div class="col-6 col-s-9" >
@@ -19,3 +19,41 @@
     <button class="btn fifth">Shop Now</button>
   </div>
 </div>   
+
+
+{% schema %}
+{
+  "name": "Homepage Ingredients",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    
+  ],
+  "blocks": [
+    {
+      "type": "hp-ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Ingredient Name",
+          "default": "Ingredient Name",
+        },
+        {
+          "type": "text",
+          "id": "ingredient-details",
+          "label": "Ingredient Details",
+          "default": "Ingredient Details",
+        },
+        {
+          "type": "url",
+          "id": "ingredient-image",
+          "label": "Ingredient Image",
+          "default": "",
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
