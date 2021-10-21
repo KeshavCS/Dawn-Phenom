@@ -105,6 +105,10 @@
   </div>
 </div>
 
+<div class="banner-offer" style="text-align: center;">
+  <h2 class="banner-offer-text">{{ section.settings.banner-offer-text }}</h2>
+</div>
+
 {% schema %}
 {
   "name": "t:sections.image-banner.name",
@@ -229,6 +233,16 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    },
+    {
+      "type": "header",
+      "content": "Banner Offer Settings"
+    },
+    {
+      "type": "text",
+      "id": "banner-offer-text",
+      "label": "Banner Offer Text",
+      "info": "Remove everything form this text box to hide the Banner Offer Section"
     }
   ],
   "blocks": [
