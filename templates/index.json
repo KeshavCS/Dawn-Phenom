@@ -29,107 +29,29 @@
       "settings": {
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-      }
+    "homepage-products": {
+      "type": "homepage-products"
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "image_ratio": "square"
-      }
+    "homepage-testimonials": {
+      "type": "homepage-testimonials"
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video": {
-          "type": "video",
-          "settings": {
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-          }
-        },
-        "collection": {
-          "type": "collection",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ],
-      "settings": {
-      }
+    "homepage-features": {
+      "type": "homepage-features"
     },
-    "video": {
-      "type": "video",
-      "settings": {
-      }
+    "homepage-ingredients": {
+      "type": "homepage-ingredients"
     },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-      }
+    "signup-offer": {
+      "type": "signup-offer"
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
     "featured_products",
-    "collage",
-    "video",
-    "multi_column"
+    "homepage-products",
+    "homepage-testimonials",
+    "homepage-features",
+    "homepage-ingredients",
+    "signup-offer"
   ]
 }
