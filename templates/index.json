@@ -39,7 +39,27 @@
       "type": "homepage-features"
     },
     "homepage-ingredients": {
-      "type": "homepage-ingredients"
+      "type": "homepage-ingredients",
+      "blocks": {
+        "ingredient1": {
+          "type": "hp-ingredient"
+        },
+        "ingredient2": {
+          "type": "hp-ingredient"
+        },
+        "ingredient3": {
+          "type": "hp-ingredient"
+        },
+        "ingredient4": {
+          "type": "hp-ingredient"
+        }
+      },
+      "block_order": [
+        "ingredient1",
+        "ingredient2",
+        "ingredient3",
+        "ingredient4"
+      ]
     },
     "signup-offer": {
       "type": "signup-offer"
