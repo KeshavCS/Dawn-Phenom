@@ -1,6 +1,7 @@
 	{{ "section-homepage-products.css" | asset_url | stylesheet_tag }}
 
-	
+<div class="page-width">
+
 	<div style="text-align: center;">	
 		<div class="card">
 		
@@ -35,3 +36,13 @@
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corpori</p>
 		<button class="button button5">Try it All</button>	
 	</div>
+
+</div>	
+
+	{% schema %}
+	{
+		"name": "Homepage Products",
+		"tag": "section",
+		"class": "spaced-section"
+	}
+	{% endschema %}
