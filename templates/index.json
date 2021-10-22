@@ -47,7 +47,6 @@
   },
   "order": [
     "image_banner",
-    "featured_products",
     "homepage-products",
     "homepage-testimonials",
     "homepage-features",
