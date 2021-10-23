@@ -1,80 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
-}
- .upk-featured-list .upk-featured-image-wrap .upk-featured-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.upk-featured-list .upk-featured-list-content {
-    position: relative;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-}
+  }
+  
+  .column
+  {
+      width:25%;
+      float:left;
+      padding:100px 10px;
+  }
 
-.upk-featured-list .upk-featured-list-title {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 700;
+  .row:after{
+      content:"";
+      display:table;
+      clear:both;
+  }
 
-    
-}
-.upk-featured-list  .upk-featured-meta {
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: #000000;
-    font-size: 17px;
-    line-height: 1;
-    padding-top: 10px;
-    font-weight: 500;
-
+  .divinner {
+    padding: 15px;
 }
 
-h1{
- font-size: 50px;
-}
-@media only screen and (min-width: 750px) {
- /* For tablets: */
+  
+  @media screen and (max-width:750px)
+  {
+      .column
+      {
+          width:100%;
+          display:block;
+          margin-bottom: 20px;
+      }
+      .column {
+        padding: 28px 8px;
+    }
+  }
 
- .col-s-9 {width: 75%;}
+  .card_testimonials
+  {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      max-width:300px;
+      margin:auto;
+      background-color:white;
+      text-align:center;
+      border-radius:40px;
+      padding-bottom:15px;
+  }
 
-}
-@media only screen and (min-width: 990px) {
- /* For desktop: */
-
- .col-6 {width: 100%;}
-
-}
-
-
-.btn0 {
-   box-sizing: border-box;
-   appearance: none;
-   background-color: transparent;
-   cursor: pointer;
-   display: flex;
-   align-self: center;
-   font-size: 1rem;
-   font-weight: 400;
-   line-height: 1;
-   margin: 20px;
-   padding: 1.2em 2.8em;
-   text-decoration: none;
-   text-align: center;
-   font-weight: 700;
-}
-
-.fifth0 {
-   border-color: #000000;
-   border-radius: 0;
-   color: #000000;
-   position: relative;
-   overflow: hidden;
-   z-index: 1;
-   margin: auto;
-
-}
+  .title
+  {
+      color:gray;
+      font-size:18px;
+  }

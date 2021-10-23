@@ -2,11 +2,11 @@
   
 <div class="row">
   <div class="col-6 col-s-9" >
-    <h1 style="text-align: center;">Wellness in a can. Yes, it's that easy </h1>
-    <div class="upk-featured-list">
+    <h1 style="text-align: center; font-size: 50px;">Wellness in a can. Yes, it's that easy </h1>
+    <div class="upk-featured-list-ingredients">
       {% for block in section.blocks %}
       {%- if block.type == "hp-ingredient" -%}
-        <div class="upk-featured-list-content" {{ block.shopify_attributes }}>
+        <div class="upk-featured-list-content-ingredients" {{ block.shopify_attributes }}>
           <div style="margin-right: 13px;">
             {%- if block.settings.ingredient-image -%}
               {{ block.settings.ingredient-image | img_url | img_tag }}
@@ -15,10 +15,11 @@
             {%- endif -%}
           </div>
           <div>
-            <h1 class="upk-featured-list-title">{{ block.settings.heading }}</h1>
+            <h1 class="upk-featured-list-title-ingredients">{{ block.settings.heading }}</h1>
             <div style="margin-top: 10px;">{{ block.settings.ingredient-details }}</div>
           </div>
         </div>
+        
       {%- endif -%}
       {% endfor %}
     </div>
@@ -26,7 +27,7 @@
   </div> 
 
   <div class="col-6 col-s-9"  id="button">
-    <button class="btn0 fifth0">Shop Now</button>
+    <button class="btn-ingredients fifth-ingredients">Shop Now</button>
   </div>
 </div>   
 

@@ -1,4 +1,4 @@
-body{
+.homepage_products{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,11 +6,8 @@ body{
     
   }
 
-  .container {
-    padding: 2px 16px;
-  }
   
-  .card{
+  .card_product{
     display: flex;
     justify-content: center;
     align-items: center;

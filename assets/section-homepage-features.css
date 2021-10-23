@@ -1,10 +1,8 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}  
   .row::after {
     content: "";
     clear: both;
@@ -16,30 +14,26 @@
     padding: 15px;
   }
   
-  html {
-    font-family: "Lucida Sans", sans-serif;
-  }
- 
-  h1{
+  #home-feature,  h1{
 
     font-size: 60px
 
   }
-  h3{
-      margin-top: 10px;
-  }
+#home-feature h1, h3{
 
-  ul{
+  margin: 1.6rem;
+}
+  #home-feature, ul{
       list-style-type: none;
   }
-  ul, li{
+  #home-feature, ul, li{
       font-size: 23px;
       padding: 10px;
   }
 
 
-   .button {
-    background-color: #4CAF50; /* Green */
+ .button {
+    background-color: #a5b1a5; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -53,7 +47,7 @@
   }
   
   
-  .button5 {background-color: #000000;} /* Black */
+ .button5 {background-color: #000000;} /* Black */
 
   /* For mobile phones: */
   [class*="col-"] {
@@ -63,12 +57,12 @@
   @media only screen and (min-width: 750px) {
     /* For tablets: */
 
-    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 75%;}
 
   }
   @media only screen and (min-width: 990px) {
     /* For desktop: */
 
-    .col-6 {width: 50%;}
+    .col-12 {width: 50%;}
 
   }
