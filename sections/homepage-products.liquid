@@ -1,6 +1,9 @@
 {{ "section-homepage-products.css" | asset_url | stylesheet_tag }}
 
-	<div id="homepage_products" style="display: flex;">	
+<div class="row">
+	<div id="homepage_products">	
+
+	<div class="column"> 
 		<div style="text-align: center;">
 			<div class="card_product">
 	
@@ -10,6 +13,9 @@
 			<button class="button">Get Mootivated</button>
 	
 		</div>
+	</div>
+
+	<div class="column"> 
 		<div style="text-align: center;">
 			<div class="card_product">
 				<img src="{{'placeholder.png' | img_url }}">
@@ -17,7 +23,10 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis </p>
 			<button class="button">Get Superboosted</button>
 		</div>
+	</div>	
 	
+
+	<div class="column"> 
 		<div style="text-align: center;">
 			<div class="card_product">
 	
@@ -26,7 +35,9 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis</p>
 			<button class="button">Get it Daily</button>
 		</div>
+	</div>	
 	
+	<div class="column"> 
 		<div style="text-align: center;">
 			<div class="card_product">
 				<img src="{{'placeholder.png' | img_url }}">
@@ -35,10 +46,10 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corpori</p>
 			<button class="button">Try it All</button>
 		</div>
-	
+	</div>
 	</div>
 		
-
+</div>
 
 	{% schema %}
 	{

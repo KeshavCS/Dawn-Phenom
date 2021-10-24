@@ -1,35 +1,44 @@
 {{ "section-homepage-ingredients.css" | asset_url | stylesheet_tag }}
   
-<div class="row">
-  <div class="col-6 col-s-9" >
-    <h1 style="text-align: center; font-size: 50px;">Wellness in a can. Yes, it's that easy </h1>
-    <div class="upk-featured-list-ingredients">
-      {% for block in section.blocks %}
-      {%- if block.type == "hp-ingredient" -%}
-        <div class="upk-featured-list-content-ingredients" {{ block.shopify_attributes }}>
-          <div style="margin-right: 13px;">
-            {%- if block.settings.ingredient-image -%}
-              {{ block.settings.ingredient-image | img_url | img_tag }}
-            {%- else -%}
-              {{ "image" | placeholder_svg_tag }}
-            {%- endif -%}
+<div class="row" id="Grandrow">
+
+  <h1 style="text-align: center;">Wellness in a can. Yes, it's that easy </h1>
+  <div  id="ingredient-row">
+  <div class="column_hompage_ingredients" >
+    <div class="list-ingredients">
+          <div class="list-content-ingredients">
+            <div style="margin-right: 13px;"><img src="assets/placeholder.png" alt=""> </div>
+            <div>
+
+              <h1 class="upk-featured-list-title-ingredients">Organic Elderberry (Superboost)</h1>
+                  <div style="margin-top: 10px;">
+                    A Natural issune booster
+                  </div>
+            </div>
           </div>
-          <div>
-            <h1 class="upk-featured-list-title-ingredients">{{ block.settings.heading }}</h1>
-            <div style="margin-top: 10px;">{{ block.settings.ingredient-details }}</div>
-          </div>
-        </div>
-        
-      {%- endif -%}
-      {% endfor %}
     </div>
     
   </div> 
+  <div class="column_hompage_ingredients">
+    <div class="list-ingredients">
+          <div class="list-content-ingredients">
+            <div style="margin-right: 13px;"><img src="assets/placeholder.png" alt=""> </div>
+            <div>
 
-  <div class="col-6 col-s-9"  id="button">
-    <button class="btn-ingredients fifth-ingredients">Shop Now</button>
-  </div>
-</div>   
+              <h1 class="upk-featured-list-title-ingredients">Organic Elderberry (Superboost)</h1>
+                  <div style="margin-top: 10px;">
+                    A Natural issune booster
+                  </div>
+            </div>
+          </div>
+    </div>
+    
+  </div> 
+</div>
+
+ 
+  </div>  
+
 
 
 {% schema %}

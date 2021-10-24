@@ -42,14 +42,14 @@
      }
      
      /* Create two equal columns that floats next to each other */
-     .column-01 {
+     .column-010 {
       float: left;
       width: 30%;
       padding: 10px;
        
      }
    
-     .column-02{
+     .column-020{
       float: right;
       width: 70%;
       padding: 10px;
@@ -57,7 +57,7 @@
      }
      
      @media only screen and (max-width: 750px)  {
-      .column-01 {
+      .column-010 {
          float: none !important;
          width: 100% !important;
          text-align: center;
@@ -65,11 +65,13 @@
          margin-left: 12px !important;
         }
       
-        .column-02{
+        .column-020{
          float: none;
          width: 100% !important;
          text-align: center;
         }
+
+
         #sech2{
           margin-top: 1.2rem !important;  
         }
@@ -93,7 +95,7 @@
      
      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
      @media screen and (max-width: 600px) {
-      .column {
+      .column-010 .column-020  {
         width: 100%;
       }
      }
