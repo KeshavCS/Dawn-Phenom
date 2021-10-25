@@ -1,23 +1,29 @@
-body{
-	max-width: 100%;
-    overflow-x: hidden;
-}
-.column_hompage_ingredients {
-	float: left;
-	padding: 10px;
-	
-  }
 
+.column_hompage_ingredients {
+	width:100%;
+  }
+.row{
+	Width: 100%;
+}
+  @media (min-width: 750px) {
+	.column_hompage_ingredients {
+	  width: 50%;
+	  float:left;
+	}
+	.row {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	.upk-featured-list-ingredients .list-content-ingredients{
+		padding: 0px 0px;
+	}
+  }
  .list-ingredients{
       margin: 0 auto;
  } 
 
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
- .list-ingredients  {
+  .list-ingredients  {
 	 height: 100%;
 	 width: 100%;
 	 object-fit: cover;
@@ -52,16 +58,11 @@ h1{
   font-size: 50px;
 }
 
+#ingredient-row{
+	margin-top: 60px;
+}
 
-@media only screen and (max-width: 768px) {
-	/* For mobile phones: */
-	[class*="column"] {
-	  width: 100%;
-	}
-	.upk-featured-list-ingredients .list-content-ingredients{
-		padding: 0px 0px;
-	}
-  }
+
 .btn-ingredients {
 	box-sizing: border-box;
 	appearance: none;
@@ -88,7 +89,4 @@ h1{
 	z-index: 1;
 	margin: auto;
 
-}
-#ingredient-row{
-	margin-top: 60px;
 }
