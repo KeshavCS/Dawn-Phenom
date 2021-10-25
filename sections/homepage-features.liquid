@@ -3,30 +3,44 @@
 <div class="row">
 
 
-    <div class="col-6 col-s-9">
+    <div class="col-12 col-s-10" id="home-feature">
         <h1>Not just <br> better <br> Phenominal </h1>
         <h3 style="padding-top: 80px; font-size: 30px; font-weight: lighter;">We've taken<br>sparkling water and
             made it<br> truly functional.</h3>
     </div>
 
-    <div class="col-6 col-s-9">
+    <div class="col-12 col-s-10" id="home-feature">
 
         <ul>
-            <li><img src="assets/juice.png" width="37px" height="37px">&nbsp;&nbsp; Great tasti with organic fruit
+            <li><img src="{{'juice.png' | asset_img_url: '37x'}}" >&nbsp;&nbsp; Great tasti with organic fruit
                 juice</li>
-            <li> <img src="assets/sugar.png" width="37px" height="37px">&nbsp;&nbsp;Low calories and low suger (from
+            <li> <img src="{{ 'sugar.png' | asset_img_url: '37x' }}" >&nbsp;&nbsp;Low calories and low suger (from
                 fruits)</li>
-            <li><img src="assets/skill-development.png" width="37px" height="37px">&nbsp;&nbsp;Developed with an
+            <li><img src="{{ 'skill-development.png' | asset_img_url: '37x' }}">&nbsp;&nbsp;Developed with an
                 integrative doctor for real <br> function</li>
-            <li><img src="assets/botanic.png" width="37px" height="37px">&nbsp;&nbsp;Powerful blends of vitamins,
+
+                
+            <li><img src="{{ 'botanic.png' | asset_img_url: '37x' }}">&nbsp;&nbsp;Powerful blends of vitamins,
                 minerals<br> adaptogens, probiotics botanicals</li>
-            <li><img src="assets/organic-food.png" width="37px" height="37px">&nbsp;&nbsp;Organic + Non GMO</li>
-            <li><img src="assets/gluten.png" width="37px" height="37px">&nbsp;&nbsp;Gluten and Soy Free</li>
-            <li><img src="assets/flavor.png" width="37px" height="37px">&nbsp;&nbsp;No artifical or "natural"
+ 
+                
+            <li><img src="{{ 'organic-food.png' | asset_img_url: '37x' }}" >&nbsp;&nbsp;Organic + Non GMO</li>
+          
+
+            
+            <li><img src="{{ 'gluten.png' | asset_img_url: '37x' }}" >&nbsp;&nbsp;Gluten and Soy Free</li>
+          
+
+          
+            <li><img src="{{ 'flavor.png' | asset_img_url: '37x' }}" >&nbsp;&nbsp;No artifical or "natural"
                 flavors, colors or <br> sweeteners</li>
-            <li><img src="assets/recycle-symbol.png" width="37px" height="37px">&nbsp;&nbsp;Recyclable packaging
+          
+               
+                <li><img src=" {{ 'recycle-symbol.png' | asset_img_url: '37x' }}" >&nbsp;&nbsp;Recyclable packaging
             </li>
-            <li><img src="assets/worldwide.png" width="37px" height="37px">&nbsp;&nbsp; 1% For the Planet</li>
+          
+            
+            <li><img src="{{ 'worldwide.png' | asset_img_url: '37x' }}" >&nbsp;&nbsp; 1% For the Planet</li>
 
 
         </ul>
