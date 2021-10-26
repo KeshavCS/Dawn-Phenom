@@ -6,7 +6,6 @@
   {
       width:33.3%;
       float:left;
-      padding:100px 10px;
   }
 
   .row:after{
@@ -21,6 +20,13 @@
 
 .card_product {
     margin: 0 auto;
+}
+
+#bePhenominal{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 4rem;
 }
  
 h1#ingredients {
@@ -41,7 +47,13 @@ h1#ingredients {
         padding: 28px 8px;
     }
   }
+  @media screen and (min-width: 768px) {
+    .card_testimonials{
+        margin: 10px !important;
+    }
 
+}
+  
   .card_testimonials
   {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -52,7 +64,7 @@ h1#ingredients {
       border-radius:40px;
       padding-bottom:15px;
   }
-
+  
   .title
   {
       color:gray;
