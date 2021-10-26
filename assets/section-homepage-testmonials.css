@@ -49,7 +49,7 @@ h1#ingredients {
   }
   @media screen and (min-width: 768px) {
     .card_testimonials{
-        margin: 10px !important;
+       max-width:17.5rem;
     }
 
 }
