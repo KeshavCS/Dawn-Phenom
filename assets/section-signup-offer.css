@@ -31,7 +31,7 @@
       font-weight: 400;
       line-height: 1;
       margin: 20px;
-      padding: 1.2em 4em;
+      padding: 1.2em 2em;
       text-decoration: none;
       text-align: center;
       font-weight: 700;
@@ -79,6 +79,7 @@
          .column-020 {
           max-width: 100%;
          }
+         
 
          .column-010{
             max-width: none;
@@ -91,8 +92,9 @@
         text-align: center !important;
      }
      #signupofferh1{
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 800;
+        overflow: hidden;
      }
      div#column2{
         margin-top: 20px;
