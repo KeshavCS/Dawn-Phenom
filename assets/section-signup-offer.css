@@ -44,16 +44,17 @@
      /* Create two equal columns that floats next to each other */
      .column-010 {
       float: left;
-      width: 30%;
+      max-width: 20%;
       padding: 10px;
        
      }
    
      .column-020{
       float: right;
-      width: 70%;
+      max-width: 80%;
       padding: 10px;
       height: 300px; 
+      margin-bottom: 10px;
      }
      
      @media only screen and (max-width: 750px)  {
@@ -70,21 +71,39 @@
          width: 100% !important;
          text-align: center;
         }
+        #section-signup h1{
+         margin: 0px;
+      }
 
+      @media (max-width: 480px) {
+         .column-020 {
+          max-width: 100%;
+         }
 
-        #sech2{
-          margin-top: 1.2rem !important;  
-        }
+         .column-010{
+            max-width: none;
+         }
+       }
       
      }
    
      #column2{
         text-align: center !important;
      }
-   
-     #sech2{
-        margin-top: 10rem;
+     #signupofferh1{
+        font-size: 60px;
+        font-weight: 800;
      }
+     div#column2{
+        margin-top: 20px;
+        font-size: 20px;
+     }
+
+     div#column2 h2{
+        font-weight: 700;
+     }
+   
+    
    
      /* Clear floats after the columns */
      .row:after {

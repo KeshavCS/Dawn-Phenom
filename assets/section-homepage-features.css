@@ -15,9 +15,13 @@
   }
   
   #home-feature,  h1{
-
     font-size: 60px
 
+  }
+
+  #text{
+    padding-left: 10px;
+    margin: 10px;
   }
 #home-feature h1, h3{
 
@@ -30,6 +34,11 @@
       font-size: 23px;
       padding: 10px;
   }
+
+#etxt{
+  font-size: 23px;
+  padding: 10px;
+}
 
 
  .button {
@@ -45,7 +54,11 @@
     cursor: pointer;
     border-radius:10px;
   }
-  
+  #heading3{
+    padding-top: 220px;
+     font-size: 30px;
+      font-weight: lighter;
+  }
   
  .button5 {background-color: #000000;} /* Black */
 
@@ -58,7 +71,7 @@
     /* For tablets: */
 
     .col-s-10 {width: 75%;}
-
+  
   }
   @media only screen and (min-width: 990px) {
     /* For desktop: */

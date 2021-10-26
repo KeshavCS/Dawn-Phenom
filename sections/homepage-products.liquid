@@ -1,61 +1,64 @@
 {{ "section-homepage-products.css" | asset_url | stylesheet_tag }}
 
-<div class="row">
-	<div id="homepage_products">	
+<div class="row page-width">
+	<div id="homepage_products">
 
-	<div class="column"> 
-		<div style="text-align: center;">
-			<div class="card_product">
-	
-				<img src="{{'placeholder.png'  | img_url }}">
+		<div class="column">
+			<div style="text-align: center;">
+				<div class="card_product">
+
+					<img src="{{'placeholder.png'  | img_url }}">
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis
+				</p>
+				<button class="button">Get Mootivated</button>
+
 			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis</p>
-			<button class="button">Get Mootivated</button>
-	
+		</div>
+
+		<div class="column">
+			<div style="text-align: center;">
+				<div class="card_product">
+					<img src="{{'placeholder.png' | img_url }}">
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis
+				</p>
+				<button class="button">Get Superboosted</button>
+			</div>
+		</div>
+
+
+		<div class="column">
+			<div style="text-align: center;">
+				<div class="card_product">
+
+					<img src="{{'placeholder.png' | img_url }}">
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis
+				</p>
+				<button class="button">Get it Daily</button>
+			</div>
+		</div>
+
+		<div class="column">
+			<div style="text-align: center;">
+				<div class="card_product">
+					<img src="{{'placeholder.png' | img_url }}">
+
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corpori</p>
+				<button class="button">Try it All</button>
+			</div>
 		</div>
 	</div>
 
-	<div class="column"> 
-		<div style="text-align: center;">
-			<div class="card_product">
-				<img src="{{'placeholder.png' | img_url }}">
-			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis </p>
-			<button class="button">Get Superboosted</button>
-		</div>
-	</div>	
-	
-
-	<div class="column"> 
-		<div style="text-align: center;">
-			<div class="card_product">
-	
-				<img src="{{'placeholder.png' | img_url }}">
-			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corporis</p>
-			<button class="button">Get it Daily</button>
-		</div>
-	</div>	
-	
-	<div class="column"> 
-		<div style="text-align: center;">
-			<div class="card_product">
-				<img src="{{'placeholder.png' | img_url }}">
-	
-			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Distinctio quae perferendis, corpori</p>
-			<button class="button">Try it All</button>
-		</div>
-	</div>
-	</div>
-		
 </div>
 
-	{% schema %}
-	{
-		"name": "Homepage Products",
-		"tag": "section",
-		"class": "spaced-section"
-	}
-	{% endschema %}
-<div>	
+{% schema %}
+{
+"name": "Homepage Products",
+"tag": "section",
+"class": "spaced-section"
+}
+{% endschema %}
+<div>
