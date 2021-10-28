@@ -1,81 +1,109 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  
-  #home-feature,  h1{
-    font-size: 60px
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-  }
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 
-  #text{
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+
+#home-feature,
+h1 {
+	font-size: 60px
+}
+
+
+/* #text{
     padding-left: 10px;
     margin: 10px;
-  }
-#home-feature h1, h3{
+  } */
 
-  margin: 1.6rem;
-}
-  #home-feature, ul{
-      list-style-type: none;
-  }
-  #home-feature, ul, li{
-      font-size: 23px;
-      padding: 10px;
-  }
-
-#etxt{
-  font-size: 23px;
-  padding: 10px;
+#home-feature h1,
+h3 {
+	margin: 1.6rem;
 }
 
+#home-feature,
+ul {
+	list-style-type: none;
+}
 
- .button {
-    background-color: #a5b1a5; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius:10px;
-  }
-  #heading3{
-    padding-top: 220px;
-     font-size: 30px;
-      font-weight: lighter;
-  }
-  
- .button5 {background-color: #000000;} /* Black */
+#home-feature,
+ul,
+li {
+	font-size: 23px;
+	padding: 10px;
+}
 
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 750px) {
-    /* For tablets: */
+#etxt {
+	font-size: 23px;
+	padding: 10px;
+}
 
-    .col-s-10 {width: 75%;}
-  
-  }
-  @media only screen and (min-width: 990px) {
-    /* For desktop: */
+#etxt img {
+	float: left;
+}
 
-    .col-12 {width: 50%;}
+#demotxt {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: 10px;
+}
 
-  }
+.button {
+	background-color: #a5b1a5;
+	/* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#heading3 {
+	padding-top: 220px;
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+.button5 {
+	background-color: #000000;
+}
+
+
+/* Black */
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+	/* For tablets: */
+	.col-s-10 {
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 990px) {
+	/* For desktop: */
+	.col-12 {
+		width: 50%;
+	}
+}

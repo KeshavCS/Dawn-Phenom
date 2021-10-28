@@ -19,6 +19,7 @@
     .col-6 {width: 100%;}
    
    } */
+
    
    
    .btn0 {
@@ -84,6 +85,10 @@
          .column-010{
             max-width: none;
          }
+
+            .w3-container.page-width{
+                  padding: 0;
+               }
        }
       
      }
