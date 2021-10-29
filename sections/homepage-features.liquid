@@ -8,7 +8,7 @@
 
     {%- for block in section.blocks -%}
     {%- if block.type == "feature-item" -%}
-        <div class="col-12 col-s-10" id="home-feature">
+        <div class="col-12 col-s-10" id="home-feature" {{ block.shopify_attributes }}>
             <div id="etxt">
                 <div> 
                     <p id="text">
