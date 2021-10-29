@@ -2,7 +2,7 @@
 <div class="w3-container page-width">
   <div style="overflow: hidden;">
     <div class="row" id="section-signup">
-      <h1 id="signupofferh1"> all for the Phenomenal you </h1>
+      <h1 id="signupofferh1">{{ section.settings.section-heading }}</h1>
     </div>
     <div class="row">
       <div class="column-010">
@@ -10,7 +10,7 @@
       </div>
       <div class="column-020">
         <div id="column2">
-          <h2>Sign up for 10% off your first order, news, promotions and insider offers. </h2>
+          <h2>{{ section.settings.section-text }}</h2>
         </div>
 
       </div>
@@ -19,14 +19,40 @@
 </div>
 <div class="page-width">
   <div style="text-align: center;">
-    <h2>You're Phenom. Join our affiliate/referral program</h2>
+    <h2>{{ section.settings.referral-text }}</h2>
   </div>
 </div>
 
 {% schema %}
 {
-"name": "Homepage Signup",
-"tag": "section",
-"class": "spaced-section"
+  "name": "Sign Up Offer",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section-heading",
+      "label": "Section Heading",
+      "default": "Section Heading Here"
+    },
+    {
+      "type": "text",
+      "id": "button-text",
+      "label": "Button Text",
+      "default": "Join Now"
+    },
+    {
+      "type": "text",
+      "id": "section-text",
+      "label": "Section Text",
+      "default": "Section Text Here"
+    },
+    {
+      "type": "text",
+      "id": "referral-text",
+      "label": "Referral Text",
+      "default": "Referral Text Here"
+    }
+  ]
 }
 {% endschema %}
