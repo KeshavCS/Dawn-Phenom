@@ -1,47 +1,87 @@
 {{ "section-homepage-testmonials.css" | asset_url | stylesheet_tag }}
 
 
-          <div class="row page-width">
+<div class="row page-width">
 
-            <h1 id="ingredients">What Our Friends Have To Say</h1>
-            <div id="hompage-testimonial">
+  <h1 id="ingredients">{{ section.settings.section-heading }}</h1>
+  <div id="hompage-testimonial">
 
-            <div class="container">
-              <div class="card_testimonials">
-                <img src="assets/3.jpg" style="width:150px;height:auto;padding-top:10px">
-                <div class="divinner">
-                  <p class="title">"so delicious,<br> and nutritious"</p>
-                  <p>-Gal</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card_testimonials">
-                <img src="assets/2.png" style="width:150px;height:auto;padding-top:10px">
-                <div class="divinner">
-                  <p class="title">"Is this for real"</p>
-                  <br>
-                  <p>-other Guy</p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="container">
-              <div class="card_testimonials">
-                <img src="assets/2.png" style="width:150px;height:auto;padding-top:10px">
-                <div class="divinner">
-                  <p class="title">"Is this for real"</p>
-                  <br>
-                  <p>-other Guy</p>
-                </div>
-              </div>
-            </div>
+    {%- for block in section.blocks -%}
+    {%- if block.type == "testimonial-item" -%}
+      <div class="container" {{ block.shopify_attributes }}>
+        <div class="card_testimonials">
+          {%- if block.settings.testimonial-image -%}
+            <img src="{{ block.settings.testimonial-image | img_url: 'master' }}" style="width:150px;height:auto;padding-top:10px">
+          {%- else -%}
+            {{ "image" | placeholder_svg_tag }}
+          {%- endif -%}
+          <div class="divinner">
+            <p class="title">"{{ block.settings.text }}"</p>
+            <p>- {{ block.settings.testimonial-name }}</p>
           </div>
-
         </div>
-          <div id="bePhenominal">
-            <button class="button button5">be Phenominal</button>
-          </div>
-          
+      </div>
+    {%- endif -%}
+    {%- endfor -%}
+      
+
+  </div>
+
+</div>
+<div id="bePhenominal">
+  <a href="{{ section.settings.button-link }}">
+    <button class="button button5">{{ section.settings.button-text }}</button>
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Homepage Testimonials",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section-heading",
+      "label": "Section Heading",
+      "default": "Section Heading Here"
+    },
+    {
+      "type": "text",
+      "id": "button-text",
+      "label": "Button Text",
+      "default": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button-link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial-item",
+      "name": "Testimonial Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "testimonial-image",
+          "label": "Testimonial Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Testimonial Text",
+          "default": "Best Drink Ever"
+        },
+        {
+          "type": "text",
+          "id": "testimonial-name",
+          "label": "Testimonial Name",
+          "default": "John Doe"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
