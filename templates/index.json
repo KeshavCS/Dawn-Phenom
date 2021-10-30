@@ -72,7 +72,27 @@
       ]
     },
     "homepage-features": {
-      "type": "homepage-features"
+      "type": "homepage-features",
+      "blocks": {
+        "feature1": {
+          "type": "feature-item"
+        },
+        "feature2": {
+          "type": "feature-item"
+        },
+        "feature3": {
+          "type": "feature-item"
+        },
+        "feature4": {
+          "type": "feature-item"
+        }
+      },
+      "block_order": [
+        "feature1",
+        "feature2",
+        "feature3",
+        "feature4"
+      ]
     },
     "homepage-ingredients": {
       "type": "homepage-ingredients",
