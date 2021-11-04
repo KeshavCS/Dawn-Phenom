@@ -30,13 +30,69 @@
       }
     },
     "homepage-products": {
-      "type": "homepage-products"
+      "type": "homepage-products",
+      "blocks": {
+        "product1": {
+          "type": "product-card"
+        },
+        "product2": {
+          "type": "product-card"
+        },
+        "product3": {
+          "type": "product-card"
+        },
+        "product4": {
+          "type": "product-card"
+        }
+      },
+      "block_order": [
+        "product1",
+        "product2",
+        "product3",
+        "product4"
+      ]
     },
     "homepage-testimonials": {
-      "type": "homepage-testimonials"
+      "type": "homepage-testimonials",
+      "blocks": {
+        "testimonial1": {
+          "type": "testimonial-item"
+        },
+        "testimonial2": {
+          "type": "testimonial-item"
+        },
+        "testimonial3": {
+          "type": "testimonial-item"
+        }
+      },
+      "block_order": [
+        "testimonial1",
+        "testimonial2",
+        "testimonial3"
+      ]
     },
     "homepage-features": {
-      "type": "homepage-features"
+      "type": "homepage-features",
+      "blocks": {
+        "feature1": {
+          "type": "feature-item"
+        },
+        "feature2": {
+          "type": "feature-item"
+        },
+        "feature3": {
+          "type": "feature-item"
+        },
+        "feature4": {
+          "type": "feature-item"
+        }
+      },
+      "block_order": [
+        "feature1",
+        "feature2",
+        "feature3",
+        "feature4"
+      ]
     },
     "homepage-ingredients": {
       "type": "homepage-ingredients",

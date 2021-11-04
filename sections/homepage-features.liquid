@@ -1,18 +1,86 @@
 {{ "section-homepage-features.css" | asset_url | stylesheet_tag }}
 
-    <div class="row page-width" style="margin-top: 10rem;">
-        <div class="col-12 col-s-10" id="home-feature">
-            <h1>Not just <br> better <br> Phenominal </h1>
-            <h3 id="heading3">We've taken<br>sparkling water and
-                made it<br> truly functional.</h3>
-        </div>
-        <div class="col-12 col-s-10" id="home-feature">
-            <div id="etxt">
-                <div>
-                    <p id="text"><img src="{{'juice.png' | asset_img_url: '37x'}}"><span id="demotxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit corrupti obcaecati voluptatum inventore corporis unde nisi</span></p>
-                </div>
+<div class="row page-width" style="margin-top: 10rem;">
+    <div class="col-12 col-s-10" id="home-feature">
+        <h1>{{ section.settings.section-heading }}</h1>
+        <h3 id="heading3">{{ section.settings.section-text }}</h3>
+    </div>
 
-                <button class="button button5" style="margin-top: 3rem; margin-left: 70px;">Shop Now</button>
+    {%- for block in section.blocks -%}
+    {%- if block.type == "feature-item" -%}
+        <div class="col-12 col-s-10" id="home-feature" {{ block.shopify_attributes }}>
+            <div id="etxt">
+                <div> 
+                    <p id="text">
+                        {%- if block.settings.feature-image -%}
+                        <img src="{{ block.settings.feature-image | img_url: '37x'}}">
+                        {%- else -%}
+                        <img src="{{ 'juice.png' | asset_img_url: '37x'}}">
+                        {%- endif -%}
+                        <span id="demotxt">{{ block.settings.text }}</span>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    {%- endif -%}
+    {%- endfor -%}
+    
+
+    <a href="{{ section.settings.button-link }}">
+        <button class="button button5" style="margin-top: 3rem; margin-left: 70px;">{{ section.settings.button-text }}</button>
+    </a>
+</div>
+
+
+{% schema %}
+{
+  "name": "Homepage Features",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "section-heading",
+      "label": "Section Heading",
+      "default": "Not just<br>Better.<br>Phenomenal"
+    },
+    {
+      "type": "textarea",
+      "id": "section-text",
+      "label": "Section Text",
+      "default": "We have taken<br> sparkling water and made it<br> truly functional."
+    },
+    {
+      "type": "text",
+      "id": "button-text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button-link",
+      "label": "Button Link",
+      "default": "/collections/all"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature-item",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "feature-image",
+          "label": "Feature Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Feature Text",
+          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem."
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

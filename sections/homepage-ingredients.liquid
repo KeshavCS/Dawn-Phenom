@@ -2,38 +2,33 @@
 
 <div class="row page-width">
   
-  <h1 style="text-align: center;">Wellness in a can. Yes, it's that easy </h1>
+  <h1 style="text-align: center;">{{ section.settings.section-heading }}</h1>
   
   <div id="ingredient-row"> 
-
     {% for block in section.blocks %}
     {%- if block.type == "hp-ingredient" -%}
-         <div class="column_hompage_ingredients" >
-              <div class="list-ingredients">
-                    <div class="list-content-ingredients" {{ block.shopify_attributes }}> 
-                      <div style="margin-right: 13px;"> 
-                        {%- if block.settings.ingredient-image -%}
-                        {{ block.settings.ingredient-image | img_url | img_tag }}
-                      {%- else -%}
-                        {{ "image" | placeholder_svg_tag }}
-                      {%- endif -%}
-                      </div>
-                      <div>
- 
-                        <h1 class="upk-featured-list-title-ingredients">{{ block.settings.heading }}</h1>
-                            <div style="margin-top: 10px;">
-                              {{ block.settings.ingredient-details }}
-                            </div>
-                      </div>
-                    </div>
-                  </div> 
-          </div>
-          {%- endif -%}  
- {% endfor %}
- 
+      <div class="column_hompage_ingredients" {{ block.shopify_attributes }}>
+        <div class="list-ingredients">
+          <div class="list-content-ingredients"> 
+            <div style="margin-right: 13px;"> 
+              {%- if block.settings.ingredient-image -%}
+              {{ block.settings.ingredient-image | img_url | img_tag }}
+            	{%- else -%}
+            	  {{ "image" | placeholder_svg_tag }}
+            	{%- endif -%}
+            </div>
 
- 
-    </div>
+            <div>
+              <h1 class="upk-featured-list-title-ingredients">{{ block.settings.heading }}</h1>
+              <div style="margin-top: 10px;">{{ block.settings.ingredient-details }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+ 		{% endfor %}
+  </div>
+
 </div>
 
 
@@ -43,7 +38,23 @@
 	"tag": "section",
 	"class": "spaced-section",
 	"settings": [
-
+		{
+			"type": "text",
+			"id": "section-heading",
+			"label": "Section Heading",
+			"default": "Section Heading Here"
+		},
+		{
+			"type": "text",
+			"id": "button-text",
+			"label": "Button Text",
+			"default": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button-link",
+			"label": "Button Link"
+		}
 	],
 	"blocks": [{
 		"type": "hp-ingredient",

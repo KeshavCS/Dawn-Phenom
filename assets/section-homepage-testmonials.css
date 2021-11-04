@@ -7,17 +7,17 @@
       width:33.3%;
       float:left;
   }
-  #hompage-testimonial{
+  /* #hompage-testimonial{
       margin: 0 auto;
-  }
+  } */
 
   .divinner {
     padding: 15px;
 }
 
-.card_product {
+/* .card_product {
     margin: 0 auto;
-}
+} */
 
 #bePhenominal{
     display: flex;
