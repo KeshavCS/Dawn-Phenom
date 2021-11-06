@@ -2,33 +2,27 @@
 <div class="main-footer">
     <div id="footer-top">
         <div id="footer-heading">
-            <h2>SHOP</h2>
+            <h2>{{ section.settings.footer-heading }}</h2>
             <div class="container">
-                <div class="left">
-                    <ul>
-                        <li> <a href="#"> MOTIVATE </a></li>
-                        <li> <a href="#"> SUPERBOOST </a></li>
-                        <li> <a href="#"> DAILY </a></li>
-                        <li> <a href="#"> VARIETY </a></li>
-                    </ul>
-                </div>
-                <div class="rights">
-                    <ul>
-                        <li> <a href="#"> About </a></li>
-                        <li> <a href="#"> Ingreadients </a></li>
-                        <li> <a href="#"> Reviews </a></li>
-                        <li> <a href="#"> FAQs </a></li>
-                        <li> <a href="#"> Contact </a></li>
-                        <li> <a href="#"> Subscription </a></li>
-                        <li> <a href="#"> Affliates </a></li>
-                    </ul>
-                </div>
+                {%- for block in section.blocks -%}
+                {%- if block.type == "footer-menu" -%}
+                    <div class="left" {{ block.shopify_attributes }}>
+                        <ul>
+                            {%- if block.settings.text != blank -%}
+                            {%- for link in block.settings.text.links -%}
+                              <li><a href="{{ link.url }}" target="_blank">- {{ link.title }}</a></li>
+                            {%- endfor -%}
+                            {%- endif -%}
+                        </ul>
+                    </div>
+                {%- endif -%}
+                {%- endfor -%}
             </div>
         </div>
         <div id="icons-footer">
-            <img src="assets/facebook.png" height="50px" width="50px">
-            <img src="assets/twitter.png" height="50px" width="50px">
-            <img src="assets/instagram.png" height="50px" width="50px">
+            <a href="{{ section.settings.social_facebook_link }}">  <img src="assets/facebook.png" height="50px" width="50px">   </a>
+            <a href="{{ section.settings.social_twitter_link }}">   <img src="assets/twitter.png" height="50px" width="50px">    </a>
+            <a href="{{ section.settings.social_instagram_link }}"> <img src="assets/instagram.png" height="50px" width="50px">  </a>
         </div>
     </div>
     <div id="footer-bottom">
@@ -38,15 +32,51 @@
         </div>
         
         <div id="payment-icon">
-            <img src="assets/paypal-logo.png" height="40px" width="40px">
-            <img src="assets/symbols.png" height="40px" width="40px">
-            <img src="assets/amazon-pay.png" height="40px" width="40px">
-            <img src="assets/phone.png" height="40px" width="40px">
-            <div id="privacy">          
-            <h3 style="margin-top: 10px;">PRIVACY POLICY</h3><br>
-            <h3>TEARM AND CONDITIONS</h3>
+          <img src="assets/paypal-logo.png" height="40px" width="40px">
+          <img src="assets/symbols.png" height="40px" width="40px">
+          <img src="assets/amazon-pay.png" height="40px" width="40px">
+          <img src="assets/phone.png" height="40px" width="40px">
+          <div id="privacy">
+            <a href="{{ shop.privacy_policy.url }}">   <h3 style="margin-top: 10px;">PRIVACY POLICY</h3> </a>
+            <a href="{{ shop.terms_of_service.url }}"> <h3>TERMS AND CONDITIONS</h3> </a>
           </div>
-
         </div>
     </div>
 </div>
+
+
+{% schema %}
+{
+  "name": "Footer Simple",
+  "settings": [
+    {
+      "type": "text",
+      "id": "footer-heading",
+      "label": "Footer Heading",
+      "default": "Shop"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "footer-menu",
+      "name": "Footer Menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "text",
+          "label": "Select Menu",
+          "default": "footer",
+          "info": "Displays only top level menu items"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "footer-menu"
+      }
+    ]
+  }
+}
+{% endschema %}
