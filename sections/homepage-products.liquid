@@ -4,12 +4,11 @@
 
 <div class="row">
 	<div id="homepage_products">
-
 		{%- for block in section.blocks -%}
     {%- if block.type == "product-card" -%}
 			<div class="column {{ block.shopify_attributes }}">
 				<div style="text-align: center;">
-					<div class="card_product">
+					<div class="card_products">
 						{%- if block.settings.product-image -%}
               {{ block.settings.product-image | img_url | img_tag }}
             {%- else -%}
