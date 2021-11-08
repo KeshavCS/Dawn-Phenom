@@ -6,7 +6,7 @@
 .container{
     padding: 40px;
 }
-.left, .rights{
+.menu-item{
     padding: 30px;
 }
 #icons-footer, img{
@@ -51,12 +51,12 @@
     position: absolute;
     top: 20%;
 }
-.main-footer .left{
+.main-footer .menu-item{
     line-height: 2.5em;
-    float: left;
+    float: menu-item;
 }
-.main-footer .rights {
-    float: left;
+.main-footer{
+    float: menu-item;
     line-height: 2em;
 }
 .main-footer ul li a{
@@ -78,10 +78,10 @@ div#privacy{
     #footer-heading{
         padding: 15px;
     }
-    .container{
+    /* .container{
         padding: 0px;
-    }
-    .main-footer .left, .rights{
+    } */
+    .main-footer .menu-item{
         padding: 10px;
     }
     #icons-footer{
