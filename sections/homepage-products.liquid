@@ -2,7 +2,7 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<div class="row">
+<div class="row h-products">
 	<div id="homepage_products">
 		{%- for block in section.blocks -%}
     {%- if block.type == "product-card" -%}

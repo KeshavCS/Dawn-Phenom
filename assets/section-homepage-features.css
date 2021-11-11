@@ -1,30 +1,74 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+.containers{
+	overflow: hidden;
 }
-
-.row::after {
-	content: "";
-	clear: both;
-	display: table;
+.layout12{
+	width: 100%;
+    display: grid;
+	justify-content: space-evenly;
 }
+  .flex-left {
+	display: flex; 
+	flex-direction: column;
+	width: 40%; 
 
-[class*="col-"] {
-	float: left;
-	padding: 15px;
+  }  
+  
+  .flex-right {
+	display: flex;
+	justify-content: center;
+	width: 40%;
+  }
+  div#features-row{
+	margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+  @media only screen and (max-width: 750px) {
+ 
+	.containers{
+		width: 100%;
+		}
+		
+		div#features-row{
+			display: block !important;
+		  }
+		  .flex-right, .flex-left{
+			  width: 100%;
+		  }
+		  #heading3{
+			  padding-top: 60px !important;
+		  } 
+		  #home-feature h1, h3{
+			  text-align: center;
+		  } 
+
+  }
+
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+	
+	div#features-row{
+		display: block !important;
+	  }
+	  .flex-right, .flex-left{
+		  width: 100%;
+	  }
+	  #heading3{
+		  padding-top: 60px !important;
+	  } 
+    
+
+    
+
+  }
+
+ #home-feature, .row{
+	max-width: 100%;
 }
-
 #home-feature,
 h1 {
 	font-size: 60px
 }
-
-
-/* #text{
-    padding-left: 10px;
-    margin: 10px;
-  } */
 
 #home-feature h1,
 h3 {
@@ -40,12 +84,11 @@ ul {
 ul,
 li {
 	font-size: 23px;
-	padding: 10px;
 }
 
 #etxt {
 	font-size: 23px;
-	padding: 10px;
+
 }
 
 #etxt img {
@@ -59,51 +102,27 @@ li {
 	margin: 10px;
 }
 
-.button {
-	background-color: #a5b1a5;
-	/* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border-radius: 10px;
+.button-features_section {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #000000;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
+
 #heading3 {
-	padding-top: 220px;
+	padding-top: 200px;
 	font-size: 30px;
 	font-weight: lighter;
 }
 
-.button5 {
-	background-color: #000000;
-}
-
-
-/* Black */
-
-
-/* For mobile phones: */
-
-[class*="col-"] {
-	width: 100%;
-}
-
-@media only screen and (min-width: 750px) {
-	/* For tablets: */
-	.col-s-10 {
-		width: 75%;
-	}
-}
-
-@media only screen and (min-width: 990px) {
-	/* For desktop: */
-	.col-12 {
-		width: 50%;
-	}
-}

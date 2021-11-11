@@ -3,10 +3,17 @@
     padding: 0;
     overflow-x: hidden;
 }
-.container{
+
+.main-footer a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.main-footer .container{
     padding: 40px;
 }
-.menu-item{
+.main-footer .menu-item{
     padding: 30px;
 }
 #icons-footer, img{
@@ -68,11 +75,11 @@ div#privacy{
     margin-bottom: 40px !important;
     margin-right: 40px !important;
     }
- @media only screen and (max-width: 750px){
+ @media only screen and (max-width: 600px){
     .main-footer{
         flex-direction:column;
     }
-    *{
+    .main-footer *{
         overflow-x: hidden;
     }
     #footer-heading{
@@ -113,3 +120,19 @@ div#privacy{
     
 }
 
+@media all and (device-width: 768px) and (orientation:portrait) {
+    #footer-top, #footer-bottom{
+          justify-content: space-evenly;
+          align-items: center;      
+    }  
+    div#payment-icon{
+        text-align: center;
+    }
+    div#privacy{
+        text-align: center;
+    }
+    #footer-top, #footer-bottom > img{
+        padding: 5px !important;
+    }
+  }
+  
