@@ -1,15 +1,7 @@
-#homepage_products{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
 
-  #homepage_products .card_products{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 283px;
+  .card_products{
+    height: 300px; 
+    margin: 50px;
     background-color:#fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     padding: 40px;
@@ -39,65 +31,74 @@
     margin: 0 auto;
  }
   
-  /* Float four columns side by side */
-  #homepage_products .column {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-}
-
-@media screen and (max-width: 750px) {
-  #homepage_products .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  #homepage_products  .column {
+  #homepage_products, .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
 }
 
-@media all and (device-width: 750px) and (device-height: 1024px) and (orientation:portrait) {
-  #homepage_products .column {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
-    margin-top: 30px; 
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .row.h-products{
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+  .card_products{
+    height: 400px;
   }
 
 }
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
- 
-  #homepage_products .column {
-    float: left;
-    width: 50%;
+  .row.h-products{
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+  
+
+}
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .card_products{
+     margin: 20px !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #homepage_products, .column {
+    width: 100%;
     padding: 0 10px;
     margin-top: 30px; 
   }
 }
 
-@media screen and (max-width: 280px) {
-  #homepage_products .column {
-    width: 100%;
-    padding: 0 10px;
-    margin-top: 30px; 
+@media screen and (min-width: 990px) {
+  #homepage_products, .column{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
+
 }
 @media screen and (max-width: 600px) {
-  .card_product{
+  .card_products{
     flex: 100%;
     max-width: 100%;
   }
-}
-@media screen and (max-width: 600px) {
-  .column {
+
+  #homepage_products, .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
+  #homepage_products, .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
 }

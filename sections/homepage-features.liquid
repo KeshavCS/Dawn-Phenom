@@ -1,14 +1,20 @@
-{{ "section-homepage-features.css" | asset_url | stylesheet_tag }}
+  {{ "section-homepage-features.css" | asset_url | stylesheet_tag }}
 
-<div class="row page-width" style="margin-top: 10rem;">
-    <div class="col-12 col-s-10" id="home-feature">
-        <h1>{{ section.settings.section-heading }}</h1>
-        <h3 id="heading3">{{ section.settings.section-text }}</h3>
-    </div>
+<div id="containers" id="layout12" >
+  <div class="layout">
+        <div class="row" id="features-row">
+          
+        <div class="flex-right">  
+          <div id="home-feature">
+            <h1>{{ section.settings.section-heading }}</h1>
+            <h3 id="heading3">{{ section.settings.section-text }}</h3>
+         </div>
+        </div> 
+<div class="flex-left">
 
     {%- for block in section.blocks -%}
     {%- if block.type == "feature-item" -%}
-        <div class="col-12 col-s-10" id="home-feature" {{ block.shopify_attributes }}>
+        <div  id="home-feature" {{ block.shopify_attributes }}>
             <div id="etxt">
                 <div> 
                     <p id="text">
@@ -24,13 +30,15 @@
         </div>
     {%- endif -%}
     {%- endfor -%}
-    
+ </div>
 
-    <a href="{{ section.settings.button-link }}">
-        <button class="button button5" style="margin-top: 3rem; margin-left: 70px;">{{ section.settings.button-text }}</button>
-    </a>
+
 </div>
-
+<a href="{{ section.settings.button-link }}">
+  <button class="button-features_section">{{ section.settings.button-text }}</button>
+</a>
+</div>
+</div>
 
 {% schema %}
 {

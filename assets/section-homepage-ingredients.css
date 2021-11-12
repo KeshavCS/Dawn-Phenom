@@ -1,14 +1,14 @@
-.row{
+#ingredient-row .row{
 	Width: 100%;
 	overflow-x: hidden;
 }
-  @media (min-width: 750px) {
+  @media (min-width: 600px) {
 	.column_hompage_ingredients {
 	  width: 50%;
 	  float:left;
 	  align-content: center;
 	}
-	.row {
+	#ingredient-row .row {
 	  content: "";
 	  display: table;
 	  clear: both;
@@ -20,13 +20,13 @@
 
   }
 
-  @media (min-width: 750px){
+  @media (min-width: 600px){
 	.list-ingredients{
 		display: flex;
 	    margin: 50px !important;
 	 } 
   }
-  @media (min-width: 481px) and (max-width: 750px) {
+  @media (min-width: 481px) and (max-width: 600px) {
   
 	.list-ingredients{
 		display: flex;
