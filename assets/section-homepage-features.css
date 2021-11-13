@@ -1,27 +1,21 @@
 .containers{
 	overflow: hidden;
 }
-.layout12{
-	width: 100%;
-    display: grid;
-	justify-content: space-evenly;
-}
   .flex-left {
 	display: flex; 
 	flex-direction: column;
-	width: 40%; 
+	width: 50%; 
 
   }  
   
   .flex-right {
 	display: flex;
 	justify-content: center;
-	width: 40%;
+	width: 45%;
   }
   div#features-row{
 	margin-top: 10rem;
     display: flex;
-    align-items: center;
     justify-content:space-evenly;
   }
   @media only screen and (max-width: 750px) {
@@ -52,6 +46,7 @@
 	  }
 	  .flex-right, .flex-left{
 		  width: 100%;
+		  justify-content: start;
 	  }
 	  #heading3{
 		  padding-top: 60px !important;
@@ -65,15 +60,12 @@
  #home-feature, .row{
 	max-width: 100%;
 }
-#home-feature,
+#home-feature
 h1 {
-	font-size: 60px
+	font-size: 60px;
+	font-weight: 700;
 }
 
-#home-feature h1,
-h3 {
-	margin: 1.6rem;
-}
 
 #home-feature,
 ul {
@@ -100,6 +92,7 @@ li {
 	align-content: center;
 	justify-content: center;
 	margin: 10px;
+	padding-left: 15px;
 }
 
 .button-features_section {
@@ -123,6 +116,6 @@ li {
 #heading3 {
 	padding-top: 200px;
 	font-size: 30px;
-	font-weight: lighter;
+	font-weight: 600;
 }
 

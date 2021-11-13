@@ -1,116 +1,63 @@
-*{margin: 0;padding: 0; box-sizing: border-box;
+*{margin: 0;padding: 0; box-sizing: border-box; }
 
-   
-   }
-   
-   
-   #section-signup h1{
-        font-size: 50px;
-        margin: 50px;
-       text-align: center;
-     }
-   
-   
-   /* @media only screen and (min-width: 750px) {
-    .col-s-9 {width: 75%;}
-   
-   }
-   @media only screen and (min-width: 990px) {
-    .col-6 {width: 100%;}
-   
-   } */
+@media only screen and (max-width: 750px) {
+      .rowss .column1232{
+       display: block !important;  
+       flex-basis: 100% !important;
+    }
+    .rowss .column232323{
+      display: block !important;
+      flex-basis: 100% !important;
+    }
+    .rowss {
+      display: flex;
+      flex-direction: column !important;
+      margin: 0px !important;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }   
+  .columnss.column232323, h2{
+     margin-top: 40px;
+  } 
 
+}
+ #signofferdiv{
+   width: 100%;
+} 
+   .rowss {
+      display: flex;
+      flex-direction: row;
+      margin: 80px;
+  }
    
+   .rowss .column1232 {
+      flex-basis: 40%;
+  }
+   
+   .rowss .column232323 {
+      flex-basis: 60%;
+  }
    
    .btn0 {
       box-sizing: border-box;
       appearance: none;
       background-color: transparent;
       cursor: pointer;
-      align-self: center;
       font-size: 1,8rem;
       font-weight: 400;
       line-height: 1;
-      margin: 20px;
       padding: 1.2em 2em;
       text-decoration: none;
       text-align: center;
       font-weight: 700;
    }
    
-     * {
-      box-sizing: border-box;
-     }
-     
-     /* Create two equal columns that floats next to each other */
-     .column-010 {
-      float: left;
-      max-width: 20%;
-      padding: 10px;
-       
-     }
-   
-     .column-020{
-      float: right;
-      max-width: 80%;
-      padding: 10px;
-      height: 300px; 
-      margin-bottom: 10px;
-     }
-     
-     @media only screen and (max-width: 750px)  {
-      .column-010 {
-         float: none !important;
-         width: 100% !important;
-         text-align: center;
-   
-         margin-left: 12px !important;
-        }
-      
-        .column-020{
-         float: none;
-         width: 100% !important;
-         text-align: center;
-        }
-        #section-signup h1{
-         margin: 0px;
-      }
-
-      @media (max-width: 480px) {
-         .column-020 {
-          max-width: 100%;
-         }
-         
-
-         .column-010{
-            max-width: none;
-         }
-
-            .w3-container.page-width{
-                  padding: 0;
-               }
-       }
-      
-     }
-   
-     #column2{
-        text-align: center !important;
-     }
      #signupofferh1{
         font-size: 50px;
         font-weight: 800;
-        overflow: hidden;
+        text-align: center;
      }
-     div#column2{
-        margin-top: 20px;
-        font-size: 20px;
-     }
-
-     div#column2 h2{
-        font-weight: 700;
-     }
-   
-    
    
      /* Clear floats after the columns */
      .row:after {
@@ -119,9 +66,4 @@
       clear: both;
      }
      
-     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-     @media screen and (max-width: 600px) {
-      .column-010 .column-020  {
-        width: 100%;
-      }
-     }
+   
