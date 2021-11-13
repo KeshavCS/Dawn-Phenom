@@ -16,9 +16,9 @@ a {
 .main-footer .menu-item{
     padding: 30px;
 }
-#icons-footer, img{
+/* #icons-footer img{
     margin: 20px;
-}
+} */
 
 #footer-top, #footer-bottom {
     display: flex;
@@ -44,9 +44,9 @@ a {
 .main-footer p{
     padding: 20px;
 }
-#icons-footer, img {
-    margin: 60px;
-}
+/* #icons-footer, img {
+    margin: 30px;
+} */
 #footer-bottom-content{
     justify-content: flex-end;
 }
@@ -107,9 +107,9 @@ div#privacy{
     .main-footer p{
         text-align: center;
     }
-    #icons-footer, img {
+    /* #icons-footer, img {
         margin: 10px;
-    }
+    } */
     #footer-bottom{
         display: block;
     }
