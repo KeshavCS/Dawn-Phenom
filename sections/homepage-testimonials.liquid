@@ -1,8 +1,6 @@
 {{ "section-homepage-testmonials.css" | asset_url | stylesheet_tag }}
 
-
 <div class="row page-width">
-
   <h1 id="ingredients">{{ section.settings.section-heading }}</h1>
   <div id="hompage-testimonial">
 
@@ -56,6 +54,11 @@
       "type": "url",
       "id": "button-link",
       "label": "Button Link"
+    },
+    {
+      "type": "url",
+      "id": "button-link",
+      "label": "Button Link"
     }
   ],
   "blocks": [
@@ -73,6 +76,12 @@
           "id": "text",
           "label": "Testimonial Text",
           "default": "Best Drink Ever"
+        },
+        {
+          "type": "text",
+          "id": "testimonial-name",
+          "label": "Testimonial Name",
+          "default": "John Doe"
         },
         {
           "type": "text",

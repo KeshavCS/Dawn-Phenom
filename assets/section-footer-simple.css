@@ -10,9 +10,9 @@
 a {
     text-decoration: none;
 }
-.main-footer .container{
+/* .main-footer .container{
     padding: 40px;
-}
+} */
 .main-footer .menu-item{
     padding: 30px;
 }
@@ -52,6 +52,7 @@ a {
 }
 
 .main-footer .container {
+    display: flex;
     width: 500px
 }
 .main-footer b {
