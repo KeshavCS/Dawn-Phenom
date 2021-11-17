@@ -1,64 +1,20 @@
-#ingredient-row .row{
+	#ingredient-row .row{
 	Width: 100%;
 	overflow-x: hidden;
 }
-  @media (min-width: 600px) {
-	.column_hompage_ingredients {
-	  width: 50%;
-	  float:left;
-	  align-content: center;
-	}
-	#ingredient-row .row {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-	.upk-featured-list-title-ingredients .list-content-ingredients{
-		padding: 0px 0px;
-	}
-	
-
-  }
-
-  @media (min-width: 600px){
-	.list-ingredients{
-		display: flex;
-	    margin: 50px !important;
-	 } 
-  }
-  @media (min-width: 481px) and (max-width: 600px) {
   
-	.list-ingredients{
-		display: flex;
-        margin: 30px !important;
-	 } 
-	 h1{
-		 font-size: 40px !important;
-	 }
-	
-  }
- 
+
+  
   .list-ingredients{
-	display: flex;
 	justify-content: center;
 	margin: 30px !important;
 	margin-left: 10px !important;
  }
  
- 
- .list-ingredients .list-content-ingredients {
-	 position: relative;
-	 display: flex;
-	 align-items: center;
-	 overflow: hidden;
-}
-
  .list-ingredients .upk-featured-list-title-ingredients {
 	 margin: 0;
 	 font-size: 25px;
 	 font-weight: 700;
-
-	 
 }
  .list-ingredients  {
 
@@ -75,6 +31,7 @@ h1{
 }
 
 #ingredient-row{
+	display: flex;
 	margin-top: 60px;
 }
 

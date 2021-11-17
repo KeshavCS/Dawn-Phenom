@@ -11,7 +11,7 @@
   .flex-right {
 	display: flex;
 	justify-content: center;
-	width: 45%;
+	width: 50%;
   }
   div#features-row{
 	margin-top: 10rem;
@@ -36,6 +36,10 @@
 		  #home-feature h1, h3{
 			  text-align: center;
 		  } 
+		  #home-feature, h1 {
+						font-size: 30px;
+						font-weight: 200;
+					}
 
   }
 
@@ -57,11 +61,10 @@
 
   }
 
- #home-feature, .row{
+ /* #home-feature, .row{
 	max-width: 100%;
-}
-#home-feature
-h1 {
+} */
+#home-feature, h1 {
 	font-size: 60px;
 	font-weight: 700;
 }

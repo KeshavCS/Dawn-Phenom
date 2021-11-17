@@ -20,9 +20,9 @@
             </div>
         </div>
         <div id="icons-footer">
-            <a href="{{ section.settings.social_facebook_link }}">  <img src="assets/facebook.png" height="50px" width="50px" style="margin: 10px;">   </a>
-            <a href="{{ section.settings.social_twitter_link }}">   <img src="assets/twitter.png" height="50px" width="50px" style="margin: 10px;">    </a>
-            <a href="{{ section.settings.social_instagram_link }}"> <img src="assets/instagram.png" height="50px" width="50px" style="margin: 10px;">  </a>
+            <a href="{{ section.settings.social_facebook_link }}">  <img src="{{ 'facebook.png' | asset_img_url: '50x'}}"  style="margin: 10px;">   </a>
+            <a href="{{ section.settings.social_twitter_link }}">   <img src="{{ 'twitter.png' | asset_img_url: '50x'}}"  style="margin: 10px;">    </a>
+            <a href="{{ section.settings.social_instagram_link }}"> <img src="{{ 'instagram.png' | asset_img_url: '50x'}}" style="margin: 10px;">  </a>
         </div>
     </div>
     <div id="footer-bottom">
@@ -32,10 +32,10 @@
         </div>
         
         <div id="payment-icon">
-          <img src="assets/paypal-logo.png" height="40px" width="40px" style="margin: 10px;"> 
-          <img src="assets/symbols.png" height="40px" width="40px" style="margin: 10px;">
-          <img src="assets/amazon-pay.png" height="40px" width="40px" style="margin: 10px;">
-          <img src="assets/phone.png" height="40px" width="40px" style="margin: 10px;">
+          <img src="{{ 'paypal-logo.png' | asset_img_url: '40x'}}" style="margin: 10px;"> 
+          <img src="{{ 'symbols.png' | asset_img_url: '40x'}}" style="margin: 10px;">
+          <img src="{{ 'amazon-pay.png' | asset_img_url: '40x'}}"  style="margin: 10px;">
+          <img src="{{ 'phone.png' | asset_img_url: '40x'}}"  style="margin: 10px;">
           <div id="privacy">
             <a href="{{ shop.privacy_policy.url }}">   <h3 style="margin: 10px;">PRIVACY POLICY</h3> </a>
             <a href="{{ shop.terms_of_service.url }}"> <h3 style="margin: 10px;">TERMS AND CONDITIONS</h3> </a>
