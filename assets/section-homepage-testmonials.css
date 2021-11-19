@@ -1,20 +1,20 @@
-  .hompage-testimonial, .container
+.hompage-testimonial, .container
   {
       width:33.3%;
       float:left;
       padding: 15px;
   }
-  /* #hompage-testimonial{
+  #hompage-testimonial{
       margin: 0 auto;
-  } */
+  }
 
   .divinner {
     padding: 15px;
 }
 
-/* .card_product {
+.card_product {
     margin: 0 auto;
-} */
+}
 
 #bePhenominal{
     display: flex;
@@ -23,13 +23,13 @@
      margin-top: 4rem;
 }
  
-h1#ingredients {
+h1#testimonials {
     font-size: 43px;
     margin: 28px;
     font-weight: 700;
     margin-top: 100px !important;
 }
-  @media screen and (max-width:600px)
+  @media screen and (max-width:750px)
   {
     .hompage-testimonial, .container
       {

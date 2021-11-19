@@ -1,4 +1,4 @@
-*{margin: 0;padding: 0; box-sizing: border-box; }
+.wrapper *{margin: 0;padding: 0; box-sizing: border-box; }
 
 @media only screen and (max-width: 750px) {
       .rowss .column1232{
@@ -35,11 +35,11 @@
   }
    
    .rowss .column1232 {
-      flex-basis: 40%;
+      width: 30%;
   }
    
    .rowss .column232323 {
-      flex-basis: 60%;
+      width: 70%;
   }
    
    .btn0 {
@@ -62,11 +62,18 @@
         text-align: center;
      }
    
-     /* Clear floats after the columns */
      .row:after {
       content: ""; 
       display: table;
       clear: both;
      }
      
-   
+     .rowss {
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 60px;
+   }

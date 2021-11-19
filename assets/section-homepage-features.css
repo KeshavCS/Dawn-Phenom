@@ -116,9 +116,14 @@ li {
 }
 
 
-#heading3 {
+#home-feature #heading3 {
 	padding-top: 200px;
 	font-size: 30px;
 	font-weight: 600;
 }
 
+#home-feature .row:after {
+	content: ""; 
+	display: table;
+	clear: both;
+   }
