@@ -2,28 +2,24 @@
 	Width: 100%;
 	overflow-x: hidden;
 }
-  
 
-  
-  .list-ingredients{
-	justify-content: center;
-	margin: 30px !important;
-	margin-left: 10px !important;
- }
- 
- .list-ingredients .upk-featured-list-title-ingredients {
-	 margin: 0;
-	 font-size: 25px;
-	 font-weight: 700;
+.list-ingredients{
+	padding: 10px;
+	color: #000000;
+	font-size: 17px;
+	line-height: 1;
+	font-weight: 500;
+	width: 100%;
 }
- .list-ingredients  {
+ 
+.ingredient-image-container {
+	width: 30%;
+}
 
-	 position: relative;
-	 color: #000000;
-	 font-size: 17px;
-	 line-height: 1;
-	 font-weight: 500;
-
+.list-ingredients .upk-featured-list-title-ingredients {
+	margin: 0;
+	font-size: 25px;
+	font-weight: 700;
 }
  
 h1{

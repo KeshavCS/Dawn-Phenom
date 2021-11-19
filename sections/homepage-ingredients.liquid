@@ -1,35 +1,31 @@
 {{ "section-homepage-ingredients.css" | asset_url | stylesheet_tag }}
 
-<!-- <div class="row page-width">
+<div class="row page-width">
   
   <h1 style="text-align: center;">{{ section.settings.section-heading }}</h1>
   
   <div id="ingredient-row"> 
     {% for block in section.blocks %}
     {%- if block.type == "hp-ingredient" -%}
-      <div class="column_hompage_ingredients" {{ block.shopify_attributes }}>
-        <div class="list-ingredients">
-          <div class="list-content-ingredients"> 
-             
-              {%- if block.settings.ingredient-image -%}
-              {{ block.settings.ingredient-image | img_url | img_tag }}
-            	{%- else -%}
-            	  {{ "image" | placeholder_svg_tag }}
-            	{%- endif -%}
-            
-
-            <div>
-              <h1 class="upk-featured-list-title-ingredients">{{ block.settings.heading }}</h1>
-              <div style="margin-top: 10px;">{{ block.settings.ingredient-details }}</div>
-            </div>
-          </div>
-        </div>
+      <div class="list-ingredients" {{ block.shopify_attributes }}>
+				<div class="ingredient-image-container">
+					{%- if block.settings.ingredient-image -%}
+          	{{ block.settings.ingredient-image | img_url | img_tag }}
+					{%- else -%}
+      	  	{{ "image" | placeholder_svg_tag }}
+					{%- endif -%}
+				</div>
+        
+				<div class="ingredient-details">
+					<p class="upk-featured-list-title-ingredients">{{ block.settings.heading }}</p>
+        	<div style="margin-top: 10px;">{{ block.settings.ingredient-details }}</div>
+				</div>
       </div>
     {%- endif -%}
  		{% endfor %}
   </div>
 
-</div> -->
+</div>
 
 
 {% schema %}
