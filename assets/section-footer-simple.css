@@ -7,9 +7,6 @@
 .main-footer a {
     text-decoration: none;
 }
-a {
-    text-decoration: none;
-}
 /* .main-footer .container{
     padding: 40px;
 } */
@@ -31,8 +28,8 @@ a {
     width: 100%;
 }
 #icons-footer{
+    display: flex;
     justify-content: flex-end;
-    padding-bottom: 200px;
 }
 #footer-heading{
     padding: 50px;
@@ -53,7 +50,7 @@ a {
 
 .main-footer .container {
     display: flex;
-    width: 500px
+    width: auto;
 }
 .main-footer b {
     position: absolute;
@@ -76,7 +73,7 @@ div#privacy{
     margin-bottom: 40px !important;
     margin-right: 40px !important;
     }
- @media only screen and (max-width: 600px){
+ @media only screen and (max-width: 750px){
     .main-footer{
         flex-direction:column;
     }
@@ -92,9 +89,9 @@ div#privacy{
     .main-footer .menu-item{
         padding: 10px;
     }
-    #icons-footer{
+    /* #icons-footer{
         padding-bottom: 50px;
-    }
+    } */
     #payment-icon{
         padding: 25px !important;
         text-align: center !important;
@@ -117,6 +114,9 @@ div#privacy{
     div#privacy{
         margin-bottom: 0px !important;
         margin-right: 0px !important;
+    }
+    .rowss{
+        width: 100%;
     }
     
 }
