@@ -1,58 +1,49 @@
-	#ingredient-row .row{
-	width: 100%;
-	overflow-x: hidden;
+
+
+ul li{
+    /* padding: 50px; */
+    list-style: none;
 }
 
-.list-ingredients{
-	padding: 10px;
-	color: #000000;
-	font-size: 17px;
-	line-height: 1;
-	font-weight: 500;
-	width: 100%;
+ul li span{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding-left: 15px;
 }
- 
-.ingredient-image-container {
-	width: 30%;
+.main p {
+    margin-left: 20px;
+    font-size: 20px;
 }
-
-.list-ingredients .upk-featured-list-title-ingredients {
-	margin: 0;
-	font-size: 25px;
-	font-weight: 700;
+.main{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
 }
 
-#ingredient-row{
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 60px;
+.main img {
+    width: 30%;
+    height: 30%;
 }
 
 
-.btn-ingredients {
-	box-sizing: border-box;
-	appearance: none;
-	background-color: transparent;
-	cursor: pointer;
-	display: flex;
-	align-self: center;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1;
-	margin: 20px;
-	padding: 1.2em 2.8em;
-	text-decoration: none;
-	text-align: center;
-	font-weight: 700;
-}
-
-.fifth-ingredients {
-	border-color: #000000;
-	border-radius: 0;
-	color: #000000;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-	margin: auto;
-
-}
+.btningredient {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1,8rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.2em 2em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+ }
+ .btningredient{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: 0 auto;
+ }

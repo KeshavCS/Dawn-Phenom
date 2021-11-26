@@ -1,85 +1,61 @@
-{{ "section-homepage-testmonials.css" | asset_url | stylesheet_tag }}
+{{ "section-hompage-testimonials.css" | asset_url | stylesheet_tag }} 
+{{ "section-homepage-testimonials.js" | asset_url | script_tag }}
 
-<div class="row page-width">
-  <h1 id="testimonials">{{ section.settings.section-heading }}</h1>
-  <div id="hompage-testimonial">
 
-    {%- for block in section.blocks -%}
-    {%- if block.type == "testimonial-item" -%}
-      <div class="container" {{ block.shopify_attributes }}>
-        <div class="card_testimonials">
-          {%- if block.settings.testimonial-image -%}
-            <img src="{{ block.settings.testimonial-image | img_url: 'master' }}" style="width:150px;height:auto;padding-top:10px">
-          {%- else -%}
-            {{ "image" | placeholder_svg_tag }}
-          {%- endif -%}
+<div class="page-wrapper">
+  <!-- Post Slider -->
+  <div class="post-slider">
+    <h1 class="slider-title" style="margin-left: 20px; margin-top: 90px;">What our friends have to say</h1> 
+    <i class="fas fa-chevron-left prev"></i>
+     <i class="fas fa-chevron-right next"></i>
+    <div class="post-wrapper">
+      <div class="post">
+        <div class="card_testimonials"> <img src="{{ 'bg.png' | asset_img_url: '100X'}}" style="width:150px;height:auto;padding-top:10px">
           <div class="divinner">
-            <p class="title">"{{ block.settings.text }}"</p>
-            <p>- {{ block.settings.testimonial-name }}</p>
+            <p class="title">Best Drink ever</p>
+            <p>-Guy</p>
+          </div>
+        </div>
+      </div>  
+      <div class="post">
+        <div class="card_testimonials"> <img src="{{ 'bg.png' | asset_img_url: '100X'}}" style="width:150px;height:auto;padding-top:10px">
+          <div class="divinner">
+            <p class="title">"So delicious & nutricious!"</p>
+            <p>-Gel</p>
           </div>
         </div>
       </div>
-    {%- endif -%}
-    {%- endfor -%}
-      
-
+      <div class="post">
+        <div class="card_testimonials"> <img src="{{ 'bg.png' | asset_img_url: '100X'}}" style="width:150px;height:auto;padding-top:10px">
+          <div class="divinner">
+            <p class="title">"Is this for real?"</p>
+            <p>-Other Gel</p>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-info">
+          <div class="card_testimonials"> <img src="{{ 'bg.png' | asset_img_url: '100X'}}" style="width:150px;height:auto;padding-top:10px">
+            <div class="divinner">
+              <p class="title">"So delicious & nutricious!"</p>
+              <p>Gel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 </div>
+
 <div id="bePhenominal">
-  <a href="{{ section.settings.button-link }}">
-    <button class="button button5">{{ section.settings.button-text }}</button>
+  <a href="#">
+    <button class="button button5">be Phenominal</button>
   </a>
 </div>
 
+
 {% schema %}
 {
-  "name": "Homepage Testimonials",
-  "tag": "section",
-  "class": "spaced-section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "section-heading",
-      "label": "Section Heading",
-      "default": "Section Heading Here"
-    },
-    {
-      "type": "text",
-      "id": "button-text",
-      "label": "Button Text",
-      "default": "Button Text"
-    },
-    {
-      "type": "url",
-      "id": "button-link",
-      "label": "Button Link"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "testimonial-item",
-      "name": "Testimonial Item",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "testimonial-image",
-          "label": "Testimonial Image"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Testimonial Text",
-          "default": "Best Drink Ever"
-        },
-        {
-          "type": "text",
-          "id": "testimonial-name",
-          "label": "Testimonial Name",
-          "default": "John Doe"
-        }
-      ]
-    }
-  ]
+  
 }
-{% endschema %}
+{% endschema %}}
