@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+
+  
+
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -124,6 +132,11 @@
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+        <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
   </head>
 
@@ -144,7 +157,7 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
 
-    <script>
+ 
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
@@ -171,6 +184,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-
+ 
   </body>
 </html>

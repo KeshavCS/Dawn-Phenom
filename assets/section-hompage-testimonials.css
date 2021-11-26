@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* POST SLIDER */
+
+.post-slider {
+  position: relative;
+}
+
+
+.post-slider .next {
+  position: absolute;
+  top: 60%;
+  right: 30px;
+  font-size: 2em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  position: absolute;
+  top: 60%;
+  left: 30px;
+  font-size: 2em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+h1.slider-title {
+  font-size: 50px;
+}
+.post-slider .post-wrapper .post {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  
+}
+
+
+
+/* CONTENT */
+
+
+#hompage-testimonial{
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+.card_testimonials
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width:300px;
+   background-color:white;
+  text-align:center;
+  margin: 30px;
+  border-radius:40px;
+}
+
+
+.divinner {
+padding: 15px;
+}
+
+/* .card_product {
+margin: 0 auto;
+} */
+
+#bePhenominal{
+display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 4rem;
+}
+
+h1#testimonials {
+font-size: 43px;
+margin: 28px;
+font-weight: 700;
+margin-top: 100px !important;
+text-decoration: none;
+}
+
+.title
+{
+  color:gray;
+  font-size:18px;
+}
+
+
+@media screen and (max-width:750px)
+  {
+    .card_testimonials{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+  }
+
+   @media screen and (min-width:751px) and (max-width:990px)
+  {
+  }
+  
