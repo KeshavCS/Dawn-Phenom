@@ -53,23 +53,7 @@
       ]
     },
     "homepage-testimonials": {
-      "type": "homepage-testimonials",
-      "blocks": {
-        "testimonial1": {
-          "type": "testimonial-item"
-        },
-        "testimonial2": {
-          "type": "testimonial-item"
-        },
-        "testimonial3": {
-          "type": "testimonial-item"
-        }
-      },
-      "block_order": [
-        "testimonial1",
-        "testimonial2",
-        "testimonial3"
-      ]
+      "type": "homepage-testimonials"
     },
     "homepage-features": {
       "type": "homepage-features",

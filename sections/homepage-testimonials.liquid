@@ -2,7 +2,7 @@
 {{ "section-homepage-testimonials.js" | asset_url | script_tag }}
 
 
-<div class="page-wrapper">
+<div class="page-wrapper page-width">
 
   <div class="post-slider">
     <h1 class="slider-title" style="margin-left: 20px; margin-top: 90px;">What our friends have to say</h1> 
@@ -56,6 +56,11 @@
 
 {% schema %}
 {
-  
+  "name": "Homepage Testimonials",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    
+  ]
 }
-{% endschema %}}
+{% endschema %}
