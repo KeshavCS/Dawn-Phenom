@@ -1,3 +1,6 @@
+*{
+	overflow-x: hidden;
+}
 .containers{
 	overflow: hidden;
 }
@@ -50,14 +53,15 @@
 	  }
 	  .flex-right, .flex-left{
 		  width: 100%;
-		  justify-content: start;
+		  justify-content: center;
 	  }
 	  #heading3{
 		  padding-top: 60px !important;
 	  } 
     
-
-    
+	  .rowss {
+		width: 100% !important;
+	  }
 
   }
 
@@ -88,6 +92,7 @@ li {
 
 #etxt img {
 	float: left;
+	width: 10%;
 }
 
 #demotxt {

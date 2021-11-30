@@ -1,4 +1,4 @@
-.wrapper *{margin: 0;padding: 0; box-sizing: border-box; }
+.wrapper *{margin: 0;padding: 0; box-sizing: border-box; overflow: hidden; }
 
 @media only screen and (max-width: 750px) {
       .rowss .column1232{
@@ -23,8 +23,15 @@
   #signofferdiv{
      margin-top: 40px;
   }
+  .rowss .column1232 {
+   width: 100% !important;
+ }
+ .rowss .column232323 {
+   width: 100% !important;
+ }
 
 }
+
  #signofferdiv{
    width: 100%;
 } 
@@ -35,11 +42,11 @@
   }
    
    .rowss .column1232 {
-      width: 30%;
+      width: 20%;
   }
    
    .rowss .column232323 {
-      width: 70%;
+      width: 80%;
   }
    
    .btn0 {
@@ -71,7 +78,6 @@
      .rowss {
       display: flex;
       flex-direction: row;
-      width: 40%;
       justify-content: center;
       align-items: center;
       text-align: center;
