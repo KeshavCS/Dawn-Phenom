@@ -1,49 +1,128 @@
-
-
-ul li{
-    /* padding: 50px; */
-    list-style: none;
+*{
+	overflow-x: hidden;
 }
-
-ul li span{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 10px;
-    padding-left: 15px;
+div{
+	overflow: hidden;
 }
-.main p {
-    margin-left: 20px;
-    font-size: 20px;
+.column_hompage_ingredients {
+	width:100%;
+	overflow-x: hidden;
+  }
+.row{
+	Width: 100%;
+	overflow-x: hidden;
 }
-.main{
-    margin-top: 15rem;
-    margin-bottom: 15rem;
-}
+  @media (min-width: 750px) {
+	.column_hompage_ingredients {
+	  width: 50%;
+	  float:left;
+	  align-content: center;
+	}
+	.row {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	
+	.upk-featured-list-title-ingredients .list-content-ingredients{
+		padding: 0px 0px;
+	}
 
-.main img {
-    width: 30%;
-    height: 30%;
-}
 
+  }
+ 
 
-.btningredient {
-    box-sizing: border-box;
-    appearance: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 1,8rem;
-    font-weight: 400;
-    line-height: 1;
-    padding: 1.2em 2em;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 700;
+  @media (min-width: 750px){
+	.list-ingredients{
+		display: flex;
+	    margin: 50px !important;
+	 } 
+  }
+  @media (min-width: 481px) and (max-width: 750px) {
+
+	.list-ingredients{
+		display: flex;
+        margin: 30px !important;
+	 } 
+	 h1{
+		 font-size: 40px !important;
+	 }
+
+  }
+
+  .list-ingredients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ } 
+
+  .list-ingredients  {
+	 height: 100%;
+	 width: 100%;
+	 object-fit: cover;
+	margin: 30px !important;
+	margin-left: 10px !important;
  }
- .btningredient{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     margin: 0 auto;
- }
+
+
+ .list-ingredients .list-content-ingredients {
+	 position: relative;
+	 padding: 14px 67px;
+	 display: flex;
+	 align-items: center;
+	 overflow: hidden;
+}
+
+ .list-ingredients .upk-featured-list-title-ingredients {
+	 margin: 0;
+	 font-size: 25px;
+	 font-weight: 700;
+
+}
+ .list-ingredients  {
+	 display: flex;
+	 align-items: center;
+
+	 position: relative;
+	 color: #000000;
+	 font-size: 17px;
+	 line-height: 1;
+	 font-weight: 500;
+}
+div#details-ingredient {
+    padding: 10px;
+}
+.list-content-ingredients svg {
+    width: 40%;
+}
+h1{
+  font-size: 50px;
+}
+#ingredient-row{
+	margin-top: 60px;
+}
+.btn-ingredients {
+	box-sizing: border-box;
+	appearance: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 20px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 700;
+}
+.fifth-ingredients {
+	border-color: #000000;
+	border-radius: 0;
+	color: #000000;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	margin: auto;
+}
